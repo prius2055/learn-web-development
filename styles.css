@@ -17,8 +17,45 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+#container.active {
+ background-color: #272a31;
+}
+
+
+#main-container.active {
+  display: none;
+}
+
 .mobile-nav {
   display: none;
+}
+
+.mobile-nav.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 410%;
+}
+
+.mobile-nav li {
+  list-style: none;
+  border-bottom: 1px solid #ec5242;
+  padding-bottom: 10px;
+  margin-top: 60px;
+  width: 100%;
+  align-self: center;
+}
+
+.mobile-nav li a {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  padding-left: 16px;
+  padding-right: 16px;
+
 }
 
 .desktop-nav {
@@ -37,14 +74,24 @@ header {
   cursor: pointer;
 }
 
+.hamburger.active {
+  display: none;
+}
+
+.btn-close.active {
+  display: block;
+}
+
 .btn-close {
   display: none;
   height: 35px;
   width: 35px;
+  cursor: pointer;
 }
 
 .logo {
   position: absolute;
+  top: 3%;
   left: 50%;
   transform: translate(-50%);
   text-decoration: none;
@@ -54,6 +101,10 @@ header {
   border-radius: 5px;
   font-weight: 700;
   padding: 0.2%;
+}
+
+.logo.active {
+  display: none;
 }
 
 .hero {
@@ -351,12 +402,12 @@ hr {
 }
 
 footer {
-padding-top: 5%;
-padding-bottom: 5%;
-padding-left: 15%;
-padding-right: 15%;
-display: flex;
-justify-content: space-between;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -372,4 +423,3 @@ justify-content: space-between;
 footer p {
   text-align: left;
 }
-
