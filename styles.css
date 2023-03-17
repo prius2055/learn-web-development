@@ -1,8 +1,6 @@
 @font-face {
   font-family: "cocogoose";
   src: url("./fonts/CocogooseLetterpress-M8Yr.ttf");
-  font-weight: 300 800;
-  font-style: normal;
 }
 
 * {
@@ -12,7 +10,7 @@
 }
 
 body {
-  font-family: "Lato", "cocogoose" , sans-serif;
+  font-family: "Lato", "cocogoose", sans-serif;
   color: #272a31;
 }
 
@@ -388,7 +386,8 @@ footer {
 }
 
 .winner-1 {
-  background: linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
+  background:
+    linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
     url("./img/winner-1.jpg");
   background-size: cover;
   height: 350px;
@@ -401,7 +400,8 @@ footer {
 }
 
 .winner-2 {
-  background: linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
+  background:
+    linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
     url("./img/winner-2.jpg");
   background-size: cover;
   height: 350px;
