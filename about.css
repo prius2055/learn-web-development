@@ -1,7 +1,3 @@
-/*background:#272a31;
- color:#ec5242;
-;*/
-
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +54,15 @@ header nav {
   margin-top: 60px;
   width: 100%;
   align-self: center;
+}
+
+.about-section-action a {
+  color: #272a31;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-decoration: none;
+  border-bottom: 1px solid #272a31;
 }
 
 .mobile-nav li a {
@@ -277,7 +282,19 @@ hr {
   cursor: pointer;
 }
 
-/* About page */
+.challenge-winners p {
+  margin-top: 2%;
+  margin-bottom: 10%;
+}
+
+.past-winners p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer p {
+  text-align: left;
+}
 
 #about-section {
   text-align: center;
@@ -310,15 +327,6 @@ hr {
   padding-bottom: 10%;
 }
 
-.about-section-action a {
-  color: #272a31;
-  font-size: 22px;
-  font-weight: 700;
-  text-transform: lowercase;
-  text-decoration: none;
-  border-bottom: 1px solid #272a31;
-}
-
 .code-challenges {
   background-color: white;
   padding-left: 5%;
@@ -333,7 +341,6 @@ hr {
 .challenges {
   border: 1px solid #d3d3d3;
   margin-top: 5%;
-  display: flex;
   border-radius: 2px;
   padding: 5%;
   display: flex;
@@ -366,24 +373,15 @@ hr {
   margin-bottom: 5%;
 }
 
-.challenge-winners p {
-  margin-top: 2%;
-  margin-bottom: 10%;
-}
-
 .past-winners {
   display: flex;
   flex-direction: column;
   padding: 0 10%;
 }
 
-.past-winners p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .winner-1 {
-  background: linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
+  background: 
+  linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
     url("./img/winner-1.jpg");
   background-size: cover;
   height: 350px;
@@ -396,7 +394,8 @@ hr {
 }
 
 .winner-2 {
-  background: linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
+  background: 
+  linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
     url("./img/winner-2.jpg");
   background-size: cover;
   height: 350px;
@@ -444,11 +443,7 @@ footer {
   padding: 0.2%;
 }
 
-footer p {
-  text-align: left;
-}
-
-/* DESTOP VERSION*/
+/* DESTOP VERSION */
 
 @media screen and (min-width: 768px) {
   .mobile-nav,
@@ -508,7 +503,7 @@ footer p {
     color: #ec5242;
   }
 
-.nav-link {
+  .nav-link {
     color: #868686;
     text-decoration: none;
   }
@@ -525,7 +520,6 @@ footer p {
   }
 
   .tag-link {
-    display: block;
     position: absolute;
     top: -5%;
     right: 5%;
