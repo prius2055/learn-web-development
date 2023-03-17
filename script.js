@@ -90,8 +90,6 @@ instructors.forEach((instructor, i) => {
   allInstructorProfile.appendChild(div);
 });
 
-console.log(window.innerWidth);
-
 moreButton.addEventListener("click", () => {
   const profiles = document.querySelectorAll(".instructor");
   console.log(profiles);
