@@ -38,7 +38,9 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Frontend
+> HTML
+> CSS
+> Javascript
 
 <details>
   <summary>CLIENT</summary>
@@ -49,18 +51,19 @@
   <ul>
     <li><a href="https://www.w3schools.com/css/">CSS</a></li>
   </ul>
+  
+    <ul>
+    <li><a href="https://www.w3schools.com/css/](https://www.w3schools.com/js/default.asp">Javascript</a></li>
+  </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
 
-> The portfolio site with an dynamic design using Javascript
+> A dynamic website for training software developers.
 
-- **[A navigation bar]**
-- **[A headline section]**
-- **[A works and about me section]**
-- **[A Contact form section]**
-- **[Beautiful animation and transition]**
-- **[Local Data Storage, data store in JS objects]**
+- **[A mobile version]**
+- **[A desktop version]**
+- **[Dynamic card that displays the instuctors]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -68,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
+> Click on this link to checkout the site.
 
 - [Live Demo Link](https://prius2055.github.io/Portfolio-project/)
 
@@ -102,13 +105,6 @@ npm start
 
 ## 👥 Authors <a name="authors"></a>
 
-> The project was built in collaboration with the following persons
-
-👤 **Yacos(https://github.com/Yacoubou-seidou)**
-👤 **Samuel (https://github.com/yawsamcode)**
-👤 **BENSON (https://github.com/Bennyjoez)**
-👤 **Umair (https://github.com/emhamza)**
-
 - GitHub: [@githubhandle](https://github.com/prius2055)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -141,7 +137,13 @@ If you like this project please let us know how you would like us to improve it
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank the Microverse team for their support
+I would like to thank the Microverse team for their support.
+
+I would also like to appreciate the creative commons team for the graphical design and inspiration
+
+> Click on this link to checkout them out.
+
+[Creative commons] (https://creativecommons.org/licenses/by-nc/4.0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
