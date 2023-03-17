@@ -48,65 +48,67 @@ const instructors = [
   },
 ];
 
-const hamburger = document.querySelector('.hamburger');
-const mobileNavCloseBtn = document.querySelector('.btn-close');
-const mainContainer = document.getElementById('main-container');
-const container = document.getElementById('container');
-const mobileNav = document.querySelector('.mobile-nav');
-const logo = document.querySelector('.logo');
-const mobileNavLink = document.querySelectorAll('.nav-link');
-const allInstructorProfile = document.querySelector('.profiles');
-const moreButton = document.querySelector('.btn-more');
+const hamburger = document.querySelector(".hamburger");
+const mobileNavCloseBtn = document.querySelector(".btn-close");
+const mainContainer = document.getElementById("main-container");
+const container = document.getElementById("container");
+const mobileNav = document.querySelector(".mobile-nav");
+const logo = document.querySelector(".logo");
+const mobileNavLink = document.querySelectorAll(".nav-link");
+const allInstructorProfile = document.querySelector(".profiles");
+const moreButton = document.querySelector(".btn-more");
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  mobileNavCloseBtn.classList.toggle('active');
-  mobileNav.classList.toggle('active');
-  mainContainer.classList.toggle('active');
-  container.classList.toggle('active');
-  logo.classList.toggle('active');
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  mobileNavCloseBtn.classList.toggle("active");
+  mobileNav.classList.toggle("active");
+  mainContainer.classList.toggle("active");
+  container.classList.toggle("active");
+  logo.classList.toggle("active");
 });
 
-mobileNavCloseBtn.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  mobileNavCloseBtn.classList.toggle('active');
-  mobileNav.classList.toggle('active');
-  mainContainer.classList.toggle('active');
-  container.classList.toggle('active');
-  logo.classList.toggle('active');
+mobileNavCloseBtn.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  mobileNavCloseBtn.classList.toggle("active");
+  mobileNav.classList.toggle("active");
+  mainContainer.classList.toggle("active");
+  container.classList.toggle("active");
+  logo.classList.toggle("active");
 });
 
 mobileNavLink.forEach((nav) => {
-  nav.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    mobileNavCloseBtn.classList.toggle('active');
-    mobileNav.classList.toggle('active');
-    mainContainer.classList.toggle('active');
-    container.classList.toggle('active');
-    logo.classList.toggle('active');
+  nav.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    mobileNavCloseBtn.classList.toggle("active");
+    mobileNav.classList.toggle("active");
+    mainContainer.classList.toggle("active");
+    container.classList.toggle("active");
+    logo.classList.toggle("active");
   });
 });
 
-instructors.forEach((instructor, i) => {
-  const div = document.createElement('div');
-  div.className = `${
-    i === 0 || i === 1 || window.innerWidth > 767
-      ? 'instructor'
-      : 'instructor invisible'
-  }`;
-  div.innerHTML = `<img src="${instructor.image}" alt="${instructor.name}"/>
+document.addEventListener("DOMContentLoaded", () => {
+  instructors.forEach((instructor, i) => {
+    const div = document.createElement("div");
+    div.className = `${
+      i === 0 || i === 1 || window.innerWidth > 767
+        ? "instructor"
+        : "instructor invisible"
+    }`;
+    div.innerHTML = `<img src="${instructor.image}" alt="${instructor.name}"/>
              <div class="intructor-profile">
                  <h2>${instructor.name}</h2>
                  <span>${instructor.title}</span>
                  <hr/>
                <p>${instructor.background}</p>
               </div>`;
-  allInstructorProfile.appendChild(div);
+    allInstructorProfile.appendChild(div);
+  });
 });
 
-moreButton.addEventListener('click', () => {
-  const profiles = document.querySelectorAll('.instructor');
+moreButton.addEventListener("click", () => {
+  const profiles = document.querySelectorAll(".instructor");
   profiles.forEach((profile) => {
-    profile.classList.remove('invisible');
+    profile.classList.remove("invisible");
   });
 });
