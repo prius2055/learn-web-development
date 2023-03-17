@@ -1,34 +1,50 @@
 const instructors = [
   {
-    image: './img/speaker_01.png',
-    name: 'Jane Andersson',
-    title: 'Snr Software Engineer at twitter',
+    image: "./img/speaker_01.png",
+    name: "Jane Andersson",
+    title: "Snr Software Engineer at twitter",
     background:
-      'Jane is a senior software Engineer at twitter and a cofounder of medium. She has spent over 15 years in the software development space',
+      "Jane is a senior software Engineer at twitter and a cofounder of medium. She has spent over 15 years in the software development space",
   },
 
   {
-    image: './img/speaker_02.png',
-    name: 'Yochai Bankler',
-    title: 'Project manager at Backer Hughes',
+    image: "./img/speaker_02.png",
+    name: "Yochai Bankler",
+    title: "Project manager at Backer Hughes",
     background:
-      'After working as a lecturer with the open university, Bankler join the Becker Hughes group where he works as a project manager. He has over 20 years experience in the industry',
+      "After working as a lecturer with the open university, Bankler join the Becker Hughes group where he works as a project manager. He has over 20 years experience in the industry",
   },
 
   {
-    image: './img/speaker_01.png',
-    name: 'Jane Andersson',
-    title: 'Snr Software Engineer at twitter',
+    image: "./img/speaker_01.png",
+    name: "Jane Andersson",
+    title: "Snr Software Engineer at twitter",
     background:
-      'Jane is a senior software Engineer at twitter and a cofounder of medium. She has spent over 15 years in the software development space',
+      "Jane is a senior software Engineer at twitter and a cofounder of medium. She has spent over 15 years in the software development space",
   },
 
   {
-    image: './img/speaker_02.png',
-    name: 'Yochai Bankler',
-    title: 'Project manager at Backer Hughes',
+    image: "./img/speaker_02.png",
+    name: "Yochai Bankler",
+    title: "Project manager at Backer Hughes",
     background:
-      'After working as a lecturer with the open university, Bankler join the Becker Hughes group where he works as a project manager. He has over 20 years experience in the industry',
+      "After working as a lecturer with the open university, Bankler join the Becker Hughes group where he works as a project manager. He has over 20 years experience in the industry",
+  },
+
+  {
+    image: "./img/speaker_02.png",
+    name: "Andre Onaki",
+    title: "Project manager at Backer Hughes",
+    background:
+      "After working as a lecturer with the open university, Bankler join the Becker Hughes group where he works as a project manager. He has over 20 years experience in the industry",
+  },
+
+  {
+    image: "./img/speaker_02.png",
+    name: "Jennfer Okon",
+    title: "Project manager at Backer Hughes",
+    background:
+      "After working as a lecturer with the open university, Bankler join the Becker Hughes group where he works as a project manager. He has over 20 years experience in the industry",
   },
 ];
 

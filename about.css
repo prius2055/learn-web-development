@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "cocogoose";
+  src: url("./fonts/CocogooseLetterpress-M8Yr.ttf");
+  font-weight: 300 800;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -133,6 +140,7 @@ header {
   font-size: 60px;
   margin-top: 1.5%;
   text-transform: uppercase;
+  font-family: 'cocogoose', sans-serif;
   font-weight: 900;
 }
 
