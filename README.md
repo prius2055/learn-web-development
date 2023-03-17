@@ -73,7 +73,7 @@
 
 > Click on this link to checkout the site.
 
-- [Live Demo Link](https://prius2055.github.io/Portfolio-project/)
+- [Live Demo Link](https://prius2055.github.io/learn-web-development/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
