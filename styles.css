@@ -1,3 +1,7 @@
+/*background:#272a31;
+ color:#ec5242;
+;*/
+
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +14,14 @@ body {
 }
 
 #container {
-  border: 1px solid red;
   background-color: #eee;
-  max-width: 768px;
   margin: 0 auto;
   font-family: "Lato", sans-serif;
 }
 
 #container.active {
- background-color: #272a31;
+  background-color: #272a31;
 }
-
 
 #main-container.active {
   display: none;
@@ -30,13 +31,21 @@ body {
   display: none;
 }
 
+.desktop-header {
+  display: none;
+}
+
+header span {
+  display: none;
+}
+
 .mobile-nav.active {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   height: 100vh;
-  width: 410%;
+  width: 430%;
 }
 
 .mobile-nav li {
@@ -55,7 +64,6 @@ body {
   text-decoration: none;
   padding-left: 16px;
   padding-right: 16px;
-
 }
 
 .desktop-nav {
@@ -64,6 +72,8 @@ body {
 
 header {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   padding: 5%;
 }
@@ -90,14 +100,10 @@ header {
 }
 
 .logo {
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  transform: translate(-50%);
+  margin-right: 40%;
   text-decoration: none;
-  color: #ec5242;
+  color: #272a31;
   font-size: 30px;
-  border: 2px solid #272a31;
   border-radius: 5px;
   font-weight: 700;
   padding: 0.2%;
@@ -214,6 +220,10 @@ hr {
   border: none;
 }
 
+.view-list {
+  display: none;
+}
+
 .instructors {
   padding: 5%;
   display: flex;
@@ -225,6 +235,10 @@ hr {
   display: flex;
   flex-direction: row;
   margin-bottom: 5%;
+}
+
+.instructor.invisible {
+  display: none;
 }
 
 .instructor img {
@@ -257,6 +271,7 @@ hr {
   font-weight: 400;
   background-color: white;
   border: 1px solid #d3d3d3;
+  cursor: pointer;
 }
 
 /* About page */
@@ -412,14 +427,195 @@ footer {
 
 .footer-logo {
   text-decoration: none;
-  color: #ec5242;
+  color: #272a31;
   font-size: 30px;
-  border: 2px solid #272a31;
-  border-radius: 5px;
   font-weight: 700;
   padding: 0.2%;
 }
 
 footer p {
   text-align: left;
+}
+
+/* DESTOP VERSION*/
+
+@media screen and (min-width: 768px) {
+  #container {
+    border: 2px solid red;
+  }
+
+  .mobile-nav,
+  .hamburger {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1.5% 15%;
+    background-color: white;
+  }
+
+  nav {
+    width: 55%;
+  }
+
+  .desktop-header {
+    background: #3e3e3e;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 1% 15%;
+    justify-content: flex-end;
+  }
+
+  .desktop-header li {
+    list-style: none;
+  }
+
+  .desktop-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
+  }
+
+  .desktop-nav li {
+    list-style: none;
+    margin-left: 5%;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+  }
+
+  header span {
+    display: block;
+    border: 3px #ec5242 solid;
+    padding: 1%;
+    font-weight: 900;
+    font-size: 14px;
+    color: #ec5242;
+  }
+
+  .desktop-nav li a {
+    color: #868686;
+    text-decoration: none;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+
+  .hero {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .programs {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .programs button {
+    display: none;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.2%;
+  }
+
+  .program-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 4% 1%;
+    width: 19.6%;
+    cursor: pointer;
+  }
+
+  .program-card:hover {
+    border: 2px white solid;
+  }
+
+  .program-card p {
+    color: white;
+    margin-left: 0;
+  }
+
+  .program-card img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .program-card h2 {
+    color: #ec5242;
+    margin-left: 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+
+  .view-list {
+    display: block;
+    color: white;
+    padding-top: 10%;
+    padding-bottom: 12%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .profiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 4%;
+  }
+
+  .btn-more {
+    display: none;
+  }
+
+  .instructors {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .instructor {
+    width: 48%;
+  }
+
+  .partners {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .partners h1 {
+    text-align: center;
+  }
+
+  .partner-images {
+    align-items: center;
+  }
+
+  .partner-images img {
+    width: 15%;
+    height: 15%;
+  }
+
+  footer .rights {
+    font-weight: 700;
+  }
+
+  footer .permission {
+    margin-top: 2%;
+  }
 }
