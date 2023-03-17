@@ -74,7 +74,7 @@ mobileNavLink.forEach((nav) => {
 instructors.forEach((instructor, i) => {
   const div = document.createElement('div');
   div.className = `${
-    i === 0 || i === 1 || window.innerWidth > 765
+    i === 0 || i === 1 || window.innerWidth > 767
       ? 'instructor'
       : 'instructor invisible'
   }`;
