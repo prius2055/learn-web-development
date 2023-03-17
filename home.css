@@ -379,13 +379,9 @@ footer {
   padding: 0 10%;
 }
 
-.past-winners p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .winner-1 {
-  background: linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
+  background:
+    linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
     url("./img/winner-1.jpg");
   background-size: cover;
   height: 350px;
@@ -398,7 +394,8 @@ footer {
 }
 
 .winner-2 {
-  background: linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
+  background:
+    linear-gradient(rgba(236, 82, 66, 0.6), rgba(236, 82, 66, 0.6)),
     url("./img/winner-2.jpg");
   background-size: cover;
   height: 350px;
@@ -631,7 +628,7 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
- .instructor {
+  .instructor {
     margin-bottom: 1%;
   }
 
