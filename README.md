@@ -93,7 +93,7 @@ npm
 
 Clone this repository to your desired folder:
 
-git clone https://github.com/prius2055/Portfolio-project.git
+git clone https://github.com/prius2055/learn-web-development.git
 
 ### Usage
 
